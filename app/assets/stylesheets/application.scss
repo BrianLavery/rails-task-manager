@@ -1,0 +1,15 @@
+@import "bootstrap/scss/bootstrap";
+
+h1, h2, h3, p, a {
+  margin: 0;
+}
+
+.task-details {
+  background-color: rgb(225, 225, 225);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.fa-square, .fa-check-square {
+  color: #007bff;
+}
