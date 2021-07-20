@@ -5,8 +5,10 @@
 <%= f.label :details %>
 <%= f.text_field :details %>
 <br>
-<%= f.check_box :completed %>
-<%= f.label :completed %>
+<% if task.persisted? %>
+  <%= f.check_box :completed %>
+  <%= f.label :completed %>
+<% end %>
 <br>
-<%= f.submit value: 'Update task' %>
+<%= f.submit%>
 <% end %>
