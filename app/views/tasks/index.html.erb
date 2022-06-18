@@ -8,7 +8,7 @@
         <i class="far fa-square"></i>
       <% end %>
       <%= link_to task.title, task_path(task), class: 'mx-2'  %>
-      <%= link_to task_path(task), class: 'mx-2', data: { confirm: "Are you sure?", method: :delete } do %>
+      <%= link_to task_path(task), class: 'mx-2', data: { confirm: "Are you sure?", method: :delete, remote: true } do %>
         <i class="far fa-trash-alt"></i>
       <% end %>
   </div>
